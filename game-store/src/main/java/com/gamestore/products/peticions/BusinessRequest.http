@@ -1,0 +1,16 @@
+GET localhost:8080/api/business
+
+###
+//Get used to search business by the CIF
+GET localhost:8080/api/business/1
+
+###
+
+POST localhost:8080/api/business
+Content-Type: application/json
+
+{
+  "id": "5",
+  "cif": "52693855I",
+  "buisnessName": "Insomniac Games"
+}

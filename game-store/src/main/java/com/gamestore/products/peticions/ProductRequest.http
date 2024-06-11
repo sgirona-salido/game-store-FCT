@@ -1,0 +1,93 @@
+//Get all products
+GET localhost:8080/api/products
+
+###
+//Return a Map wit tagId -> NumTag
+GET localhost:8080/api/products/countTags
+
+###
+//Search a product by his tag
+GET localhost:8080/api/products/tag/9
+
+###
+//Get any product that contains the {name}
+GET localhost:8080/api/products/name/Mario
+
+###
+
+//Get by videogame id
+GET localhost:8080/api/products/401
+
+###
+//Post for videogame
+POST http://localhost:8080/api/products/videogame
+Content-Type: application/json
+
+{
+  "digital": true,
+  "physical": false,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "name": "The Legend of Zelda : Tears of the Kingdom",
+  "description": "Explore once again the world of Hyrule",
+  "businessId": "2",
+  "tags": [
+    "3",
+    "6"
+  ],
+  "platforms": [],
+  "productImage": "",
+  "sourceList": [],
+  "officialWebsite": "",
+  "price": 69.99,
+  "releaseDate": "2003-02-14"
+}
+###
+//Delete videogame by id
+DELETE http://localhost:8080/api/products/5
+
+###
+//Post for boardgame
+POST localhost:8080/api/products/boardgame
+Content-Type: application/json
+
+{
+  "id": "201",
+  "name": "UNO",
+  "description": "Card game",
+  "businessId": "1",
+  "tags": [
+    "4"
+  ],
+  "minPlayers": 2,
+  "maxPlayers": 4,
+  "rulesList": [],
+  "productImage": "",
+  "sourceList": [],
+  "officialWebsite": "",
+  "price": 0
+}
+
+###
+
+POST localhost:8080/api/products/accesories
+Content-Type: application/json
+
+{
+  "id": "401",
+  "name": "Teclat MK101T3 RGB",
+  "description": "Experiencia Superior con Teclado Mecánico: El interruptor rojo ofrece una escritura silenciosa y rápida sin notables golpes táctiles ni clics. Ideal para jugadores que prefieren un ambiente tranquilo y pulsaciones de teclas rápidas. Los interruptores y estabilizadores prelubricados mejoran la sensación y el rendimiento de las teclas.",
+  "businessId": "4",
+  "tags": [
+    "5"
+  ],
+  "color": "black",
+  "productImage": "",
+  "sourceList": [],
+  "officialWebsite": "",
+  "price": 0
+}
+
+###
+
+GET localhost:8080/api/products/items

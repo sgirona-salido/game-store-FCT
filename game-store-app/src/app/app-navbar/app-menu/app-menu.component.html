@@ -1,0 +1,5 @@
+<ul class="flex items-center gap-6 text-sm">
+  <li *ngFor="let link of links">
+    <a class="text-gray-500 transition hover:text-gray-500/75" [href]="link.url"> {{ link.label }} </a>
+  </li>
+</ul>

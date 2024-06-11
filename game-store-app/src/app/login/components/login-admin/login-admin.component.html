@@ -1,0 +1,10 @@
+<div class="login-container">
+  <h2>Iniciar Sessió</h2>
+  <form [formGroup]="loginData">
+    <label for="username">Nom:</label>
+    <input type="text" id="username" name="username" formControlName="username" required>
+    <label for="password">Contrasenya:</label>
+    <input type="password" id="password" name="password" formControlName="password" required>
+    <button type="button" (click)="getAuthorizationCode()">Entrar</button>
+  </form>
+</div>

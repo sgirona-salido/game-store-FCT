@@ -1,0 +1,74 @@
+<div class="flex justify-between mx-5 mb-2">
+  <div class="relative mt-2">
+    <details
+      class="overflow-hidden rounded border border-gray-300 [&_summary::-webkit-details-marker]:hidden"
+    >
+      <summary
+        class="flex cursor-pointer items-center justify-between gap-2 bg-white p-4 text-gray-900 transition"
+      >
+        <span class="text-sm font-medium"> Filtrar per categoria </span>
+
+        <span class="transition group-open:-rotate-180">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="h-4 w-4"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+        </svg>
+      </span>
+      </summary>
+
+      <div class="absolute left-0 right-0 top-full z-10 border-t border-gray-200 bg-white">
+        <ul class="space-y-1 border-t border-gray-200 p-4">
+          <li>
+            <button class="hover:text-red-500" (click)="filter=''">Tots</button>
+          </li>
+          <li *ngFor="let tag of tags">
+            <button class="hover:text-red-500" (click)="filter=tag.id">{{ tag.type }}</button>
+          </li>
+        </ul>
+      </div>
+    </details>
+  </div>
+  <div class="relative mt-2">
+    <label for="Search" class="sr-only"> Search </label>
+
+    <input
+      type="text"
+      id="Search"
+      placeholder="Search for..."
+      class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm"
+      [(ngModel)]="searchProduct"
+      (keyup.enter)="getProductsBySearch()"
+    />
+
+    <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
+    <button type="button" class="text-gray-600 hover:text-gray-700">
+      <span class="sr-only">Search</span>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="h-4 w-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+        />
+      </svg>
+    </button>
+  </span>
+  </div>
+</div>
+<hr>
+<div class="grid grid-cols-3 gap-4">
+  <app-product-item *ngFor="let item of getFilteredProducts()" [item]="item"/>
+</div>

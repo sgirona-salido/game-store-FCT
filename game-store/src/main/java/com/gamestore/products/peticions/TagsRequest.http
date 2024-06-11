@@ -1,0 +1,37 @@
+GET localhost:8080/api/tags/1
+
+###
+
+GET localhost:8080/api/tags/
+
+###
+
+POST localhost:8080/api/tags/multi
+Content-Type: application/json
+
+[
+  {
+    "id": "1",
+    "type": "Platform"
+  },
+  {
+    "id": "2",
+    "type": "Action-Role"
+  },
+  {
+    "id": "3",
+    "type": "Fantasy"
+  },
+  {
+    "id": "4",
+    "type": "Card Game"
+  },
+  {
+    "id": "5",
+    "type": "Headset"
+  },
+  {
+    "id": "6",
+    "type": "Open-World"
+  }
+]

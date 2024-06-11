@@ -1,0 +1,107 @@
+<div class="mt-20 sm:mt-0 ">
+  <div class="md:grid md:grid-cols-5 md:gap-6 md:mt-10">
+    <div class="mt-5 md:mt-0 md:col-span-3 md:col-start-2">
+      <form [formGroup]="productVideogameForm" (ngSubmit)="saveProduct()">
+        <div class="shadow-lg shadow-red-500/50 overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-white sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+              <div class="col-span-6 sm:col-span-3">
+                <label class="block text-sm font-medium text-gray-700">Nom producte</label>
+                <input type="text" formControlName="name" placeholder="Grand Thief Auto..."
+                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label class="block text-sm font-medium text-gray-700">Data publicació</label>
+                <input formControlName="releaseDate" type="date"
+                       class="mt-1 focus:ring-red-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-6 ">
+                <label class="block text-sm font-medium text-gray-700">Descripció</label>
+                <textarea type="text" formControlName="description" placeholder="Descripció Producte"
+                          class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </textarea>
+              </div>
+
+              <div class="col-span-6 sm:col-span-3">
+                <label class="block text-sm font-medium text-gray-700">Companyia</label>
+                <select
+                  formControlName="businessId"
+                  class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                  <option *ngFor="let item of business$ | async" [ngValue]="item.id">
+                    {{ item.buisnessName }}
+                  </option>
+                </select>
+              </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <label class="block text-sm font-medium text-gray-700">Preu</label>
+                <input formControlName="price" type="number"
+                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3 lg:col-span-3">
+                <label class="block text-sm font-medium text-gray-700">Imatge Portada</label>
+                <input formControlName="productImage" placeholder="URL Imatge Portada"
+                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3 lg:col-span-3">
+                <label class="block text-sm font-medium text-gray-700">Link Pàgina Oficial</label>
+                <input formControlName="officialWebsite" placeholder="URL Web Oficial"
+                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3 lg:col-span-6">
+                <label class="block text-sm font-medium text-gray-700">Banner Producte</label>
+                <input formControlName="productCover" placeholder="URL imatge banner"
+                       class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+              </div>
+
+              <div class="col-span-6 sm:col-span-3" formArrayName="sourceList">
+                <div class="flex items-center space-x-2">
+                  <label class="block text-sm font-medium text-gray-700">Media</label>
+                  <button type="button" (click)="addMediaLink()" class="block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus text-gray-500 hover:text-gray-700 hover:scale-110">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"/>
+                      <path d="M9 12h6"/>
+                      <path d="M12 9v6"/>
+                    </svg>
+                  </button>
+                </div>
+                <div *ngFor="let item of mediaFormArray.controls; let i=index">
+                  <div class="flex items-center space-x-2 mb-2">
+                    <input type="text" [formControlName]="i"
+                           class="block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                           placeholder="https://youtube.video o https://image"/>
+                    <button type="button" (click)="deleteMediaItem(i)"
+                            class="text-red-500 hover:text-red-700 hover:scale-110">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                           class="icon icon-tabler icons-tabler-outline icon-tabler-circle-minus">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/>
+                        <path d="M9 12l6 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+            <button type="submit"
+                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Guardar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
