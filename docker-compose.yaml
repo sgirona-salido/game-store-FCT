@@ -1,0 +1,21 @@
+services:
+  frontend:
+    container_name: frontend
+    build:
+      context: ./game-store-app
+    restart: always
+    ports:
+      - 4200:4200
+  backend-api:
+    container_name: backend-api
+    build:
+      context: ./game-store
+    ports:
+      - 8080:8080
+    restart: always
+  backend-auth:
+    container_name: backend-auth
+    build: 
+      context: ./authorization-server
+    ports: 
+      - 9001:9001
