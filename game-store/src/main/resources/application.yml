@@ -9,4 +9,4 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: "http://127.0.0.1:9001"
+          issuer-uri: "http://188.166.86.146:9001"
