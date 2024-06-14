@@ -100,7 +100,7 @@ public class SecurityConfig {
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-                .redirectUri("http://localhost:4200/authorized")
+                .redirectUri("http://188.166.86.146:4200/authorized")
                 .postLogoutRedirectUri("http://127.0.0.1:8081/logout")
                 .scope("read")
                 .scope("write")
@@ -151,7 +151,7 @@ public class SecurityConfig {
     @Bean
     public AuthorizationServerSettings authorizationServerSettings() {
         return AuthorizationServerSettings.builder()
-                .issuer("http://127.0.0.1:9001")
+                .issuer("http://188.166.86.146:9001")
                 .build();
     }
 }
