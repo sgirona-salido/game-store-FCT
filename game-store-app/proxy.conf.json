@@ -5,10 +5,10 @@
   },
   "/oauth2": {
     "target": "https://games-g.servegame.com/auth",
-    "secure": false
+    "secure": true
   },
   "/login": {
     "target": "https://games-g.servegame.com/auth",
-    "secure": false
+    "secure": true
   }
 }
