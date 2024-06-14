@@ -1,0 +1,35 @@
+[{
+  "_id": "1",
+  "type": "Platform",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "2",
+  "type": "Action-Role",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "3",
+  "type": "Fantasy",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "4",
+  "type": "Card Game",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "5",
+  "type": "Headset",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "6",
+  "type": "Open-World",
+  "_class": "com.gamestore.products.models.Tag"
+},
+{
+  "_id": "7",
+  "type": "Hack and Slash",
+  "_class": "com.gamestore.products.models.Tag"
+}]

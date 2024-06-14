@@ -1,0 +1,38 @@
+[{
+  "_id": "1",
+  "cif": "12345678A",
+  "buisnessName": "UNO Company",
+  "_class": "com.gamestore.products.models.Business"
+},
+{
+  "_id": "2",
+  "cif": "98765432C",
+  "buisnessName": "Nintendo",
+  "_class": "com.gamestore.products.models.Business"
+},
+{
+  "_id": "3",
+  "cif": "86923428G",
+  "buisnessName": "Santa Monica Studio",
+  "_class": "com.gamestore.products.models.Business"
+},
+{
+  "_id": "4",
+  "cif": "75296387T",
+  "buisnessName": "GamingTech",
+  "_class": "com.gamestore.products.models.Business"
+},
+{
+  "_id": "5",
+  "cif": "52693855I",
+  "buisnessName": "Insomniac Games",
+  "_class": "com.gamestore.products.models.Business"
+},
+{
+  "_id": {
+    "$oid": "6630cb4a726c4788cdb7c0aa"
+  },
+  "cif": "59682638G",
+  "buisnessName": "ATLUS",
+  "_class": "com.gamestore.products.models.Business"
+}]

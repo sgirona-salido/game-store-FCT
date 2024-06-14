@@ -1,0 +1,191 @@
+[{
+  "_id": "101",
+  "platforms": [],
+  "digital": true,
+  "physical": false,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "name": "The Legend of Zelda : Tears of the Kingdom",
+  "description": "Explore once again the world of Hyrule",
+  "businessId": "2",
+  "tags": [
+    "3",
+    "6"
+  ],
+  "productImage": "",
+  "sourceList": [
+    "",
+    "",
+    ""
+  ],
+  "officialWebsite": "",
+  "price": 59.95,
+  "releaseDate": {
+    "$date": "2023-03-23T23:00:00.000Z"
+  },
+  "_class": "com.gamestore.products.models.Video"
+},
+{
+  "_id": "103",
+  "platforms": [],
+  "digital": true,
+  "physical": false,
+  "minPlayers": 1,
+  "maxPlayers": 1,
+  "name": "God Of War: Chains Of Olympus",
+  "description": "During Kratos' ten years of service to the Olympian gods, he is sent to the city of Attica to help defend it from the invading Persian army. After successfully killing the Persian King, decimating his army, and slaying their pet basilisk, Kratos observes the Sun fall from the sky, plunging the world into darkness.",
+  "businessId": "3",
+  "tags": [
+    "7",
+    "2"
+  ],
+  "productImage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5qi2.png",
+  "sourceList": [
+    "https://i.ytimg.com/vi/2bNsfuaWsB0/maxresdefault.jpg",
+    "https://i.ytimg.com/vi/2bNsfuaWsB0/maxresdefault.jpg",
+    ""
+  ],
+  "officialWebsite": "https://en.wikipedia.org/wiki/God_of_War:_Chains_of_Olympus",
+  "price": 10.5,
+  "releaseDate": {
+    "$date": "2011-09-10T22:00:00.000Z"
+  },
+  "productCover": "https://images.igdb.com/igdb/image/upload/t_original/scplfa.webp",
+  "_class": "com.gamestore.products.models.Video"
+},
+{
+  "_id": "104",
+  "platforms": [
+    "Playstation 4"
+  ],
+  "digital": true,
+  "physical": false,
+  "minPlayers": 1,
+  "maxPlayers": 1,
+  "name": "Marvel's Spider-Man",
+  "description": "Starring the world’s most iconic Super Hero, Spider-Man features the acrobatic abilities, improvisation and web-slinging that the wall-crawler is famous for, while also introducing elements never-before-seen in a Spider-Man game. From traversing with parkour and utilizing the environment, to new combat and blockbuster set pieces, it’s Spider-Man unlike any you’ve played before.\nMore...",
+  "businessId": "5",
+  "tags": [
+    "6",
+    "2",
+    "7"
+  ],
+  "productImage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r77.png",
+  "sourceList": [
+    "https://www.youtube.com/watch?v=K4zm30yeHHE",
+    "https://www.youtube.com/watch?v=K4zm30yeHHE",
+    "https://www.youtube.com/watch?v=K4zm30yeHHE",
+    "https://www.cgmagonline.com/wp-content/uploads/2018/09/spider-man-ps4-review.jpg"
+  ],
+  "officialWebsite": "https://insomniac.games/game/spider-man-ps4/",
+  "price": 69.99,
+  "releaseDate": {
+    "$date": "2018-09-06T22:00:00.000Z"
+  },
+  "productCover": "https://images.igdb.com/igdb/image/upload/t_original/xyrkou2h4zxjnmitk8gi.webp",
+  "_class": "com.gamestore.products.models.Video"
+},
+{
+  "_id": "401",
+  "color": "black",
+  "name": "Teclat MK101T3 RGB",
+  "description": "Experiencia Superior con Teclado Mecánico: El interruptor rojo ofrece una escritura silenciosa y rápida sin notables golpes táctiles ni clics. Ideal para jugadores que prefieren un ambiente tranquilo y pulsaciones de teclas rápidas. Los interruptores y estabilizadores prelubricados mejoran la sensación y el rendimiento de las teclas.",
+  "businessId": "4",
+  "tags": [
+    "5"
+  ],
+  "productImage": "",
+  "sourceList": [],
+  "officialWebsite": "",
+  "_class": "com.gamestore.products.models.Accesories",
+  "price": 32.53
+},
+{
+  "_id": "102",
+  "platforms": [],
+  "digital": true,
+  "physical": true,
+  "minPlayers": 1,
+  "maxPlayers": 4,
+  "name": "Super Mario: Wonder",
+  "description": "When you touch a Wonder Flower in the game, the wonders of the world unlock – pipes could come alive, hordes of enemies may appear, characters might change their looks, for example – transforming the gameplay in unpredictable ways. Excitement and different surprises await in each course. Super Mario Bros. Wonder features Princess Peach, Princess Daisy and Yoshi as playable characters, in addition to familiar characters like Mario, Luigi and Toad.",
+  "businessId": "2",
+  "tags": [
+    "1",
+    "6"
+  ],
+  "productImage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6nnl.png",
+  "sourceList": [
+    "https://youtu.be/JStAYvbeSHc",
+    "https://youtu.be/JStAYvbeSHc",
+    "https://youtu.be/ljx3QQ4uApg",
+    "https://nintendoeverything.com/wp-content/uploads/sites/1/nggallery/super-mario-wonder/SuperMarioBrosWonder_scrn_07.jpg"
+  ],
+  "officialWebsite": "https://supermariobroswonder.nintendo.com/",
+  "price": 49.84,
+  "releaseDate": {
+    "$date": "2023-10-19T22:00:00.000Z"
+  },
+  "productCover": "https://images.igdb.com/igdb/image/upload/t_original/ar2dcn.webp",
+  "_class": "com.gamestore.products.models.Video"
+},
+{
+  "_id": {
+    "$oid": "6630cae32fa15053151fd28f"
+  },
+  "platforms": [
+    ""
+  ],
+  "digital": false,
+  "physical": false,
+  "minPlayers": 0,
+  "maxPlayers": 0,
+  "name": "Persona 5 Royal",
+  "description": "An enhanced version of Persona 5 with some new characters and a third semester added to the game.",
+  "businessId": "6630cb4a726c4788cdb7c0aa",
+  "tags": [
+    "1"
+  ],
+  "productImage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nic.png",
+  "sourceList": [
+    ""
+  ],
+  "officialWebsite": "https://persona.atlus.com/p5r/?lang=en",
+  "price": 59.99,
+  "releaseDate": {
+    "$date": "2019-10-30T23:00:00.000Z"
+  },
+  "_class": "com.gamestore.products.models.Video"
+},
+{
+  "_id": {
+    "$oid": "6666c3da07e5136fd231fb33"
+  },
+  "platforms": [
+    ""
+  ],
+  "digital": false,
+  "physical": false,
+  "minPlayers": 0,
+  "maxPlayers": 0,
+  "name": "Kirby and the Forgotten Land",
+  "description": "Join Kirby in an unforgettable journey through a mysterious world in a delightful 3D platforming adventure. Take control of the powerful pink puffball, Kirby, and move around freely in 3D stages as you discover a mysterious world with abandoned structures from a past civilization - like a shopping mall?! Copy enemies’ abilities like Sword and Ice and use them to attack and explore your surroundings! What journey awaits Kirby? Take a deep breath and get ready for an unforgettable adventure!",
+  "businessId": "2",
+  "tags": [
+    "1"
+  ],
+  "productImage": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3vlw.webp",
+  "sourceList": [
+    "https://youtu.be/H3LAkr0ANgw",
+    "https://youtu.be/_B-qk4_V2jY",
+    "https://images.igdb.com/igdb/image/upload/t_original/scdrv9.webp",
+    ""
+  ],
+  "officialWebsite": "https://kirbyandtheforgottenland.nintendo.com/",
+  "price": 49,
+  "releaseDate": {
+    "$date": "2022-03-24T23:00:00.000Z"
+  },
+  "productCover": "https://images.igdb.com/igdb/image/upload/t_original/ar1cbl.webp",
+  "_class": "com.gamestore.products.models.Video"
+}]
