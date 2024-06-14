@@ -151,7 +151,7 @@ public class SecurityConfig {
     @Bean
     public AuthorizationServerSettings authorizationServerSettings() {
         return AuthorizationServerSettings.builder()
-                .issuer("https://games-g.servegame.com/auth")
+                .issuer("http://188.166.86.146:9001")
                 .build();
     }
 }

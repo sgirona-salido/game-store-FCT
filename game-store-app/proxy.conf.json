@@ -4,11 +4,11 @@
     "secure": false
   },
   "/oauth2": {
-    "target": "https://games-g.servegame.com/auth",
-    "secure": true
+    "target": "http://188.166.86.146:9001",
+    "secure": false
   },
   "/login": {
-    "target": "https://games-g.servegame.com/auth",
-    "secure": true
+    "target": "http://188.166.86.146:9001",
+    "secure": false
   }
 }
